@@ -1,0 +1,30 @@
+
+<h1>Hello, Rails!</h1>
+
+<br>
+<%= link_to 'My Blog', controller: 'articles' %>
+
+<br>
+<%= link_to 'articles_path', articles_path, controller: 'articles' %>
+
+<br>
+<%= link_to 'new_article', new_article_path%>
+
+<br>
+<%= link_to 'link_004', 'welcome#index'%> <!-- this one works -->
+
+<br>
+<%= link_to 'link_002', url: 'welcome/test_page2' %>
+
+<br>
+<%= link_to 'link_005', 'welcome_test_page2_path'%>
+
+<br>
+<a href '/welcome/test_page2'> link_003 </a>
+
+<br>
+<%= link_to 'welcome3', 'welcome#test_page2', controller: 'welcome' %> 
+<!-- this leads to welcome#index, not to welcome#test_page2 -->
+
+<br>
+<%= link_to 'link_006', 'welcome_index_url'%>

@@ -1,0 +1,23 @@
+
+<br>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'new_article_path', root_path%>
+<br>
+<%= link_to 'articles_path', articles_path%>
+<br>
+<br> 
+<a href = 'welcome/test_page2'>Test</a>
